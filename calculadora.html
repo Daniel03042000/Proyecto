@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <!--Se agrega el archivo de Css-->
+    <link rel="stylesheet" href="Css/estilo.css">
+</head>
+<!--Se escribirá todo en inglés con el fin de facilitar el coding-->
+<body>
+    <div class="content-body">
+        <div class="content-calculator">
+
+            <div class="screen">
+                <!--La pantalla donde va los numeros-->
+                <input type="text" placeholder="0" disabled id="screen-result">
+            </div>
+            <!--Se incluyen los botones y la obtención de su valor-->
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="7" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="8" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="9" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="+" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="4" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="5" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="6" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="-" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="1" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="2" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="3" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="*" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="0" onclick="getData(this)">
+            </div>
+            <div class="btn-cal btn-cal-radius">
+                <input type="button" value="/" onclick="getData(this)">
+            </div>
+            <!--Se acregan las funciones a estos botones-->
+            <div class="btn-cal btn-cal-radius btn-clean">
+                <input type="button" value="C" class="clean" onclick="clean()">
+            </div>
+            <div class="btn-cal btn-cal-radius btn-equal">
+                <input type="button" value="=" class="equal" onclick="calculate()">
+            </div>
+
+        </div>
+    </div>
+
+    
+
+    <!--Se agrega el archivo de JavaScript-->
+    <script src="js/calculadora.js"></script>
+</body>
+</html>
